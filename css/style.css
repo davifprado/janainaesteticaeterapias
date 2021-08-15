@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url("../fonts/OpenSansCondensed-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("../fonts/OpenSansCondensed-Light.ttf");
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'OpenSans-Light';
+    font-weight: 800;
+    line-height: 1.8em;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3px;
+    scroll-behavior: smooth;
+}
+/* body {
+    background-color: rgb(248, 206, 245);
+
+} */
+a, .nav-link, .dropdown-item {
+    text-decoration: none;
+    color: rgb(3, 3, 3)!important;
+}
+
+header {
+    background-color: rgba(229, 145, 224);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=85);
+    -moz-opacity: 0.85;
+    -khtml-opacity: 0.85;
+    opacity: 0.85;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 101;
+    box-shadow: 0px 5px 10px #ccc;
+    font-size: 1.2rem;
+    /* border: solid 1px red; */
+}
+
+.dropdown-menu {
+    background-color: rgba(229, 145, 224, 0.7);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.carousel-img  {
+    width: auto;
+    max-height: 600px;
+    filter: brightness(100%)
+}
+
+.nav-item {
+    margin: 5px;
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: auto;   
+}
+
+.card, .carousel, .conteudos-gratuitos {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+.card-footer {
+    text-align: center;
+}
+footer {
+    background-color: rgba(229, 145, 224, 0.85);
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:768px) {
+    /* .carousel {
+        display: none;
+    } */
+
+    header {
+        position: absolute;
+    }
+
+    main {
+        top: 8%;
+    }
+}
