@@ -7,6 +7,14 @@
     font-family: 'OpenSans-Light';
     src: url("../fonts/OpenSansCondensed-Light.ttf");
 }
+@font-face {
+    font-family: 'RobotoCondensed-Regular';
+    src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+@font-face {
+    font-family: 'RobotoCondensed-Light';
+    src: url("../fonts/RobotoCondensed-Light.ttf");
+}
 
 body,
 html {
@@ -14,8 +22,8 @@ html {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    font-family: 'OpenSans-Light';
-    font-weight: 800;
+    font-family: 'RobotoCondensed-Light', sans-serif;
+    font-weight: 400;
     line-height: 1.8em;
     color: rgba(0, 0, 0, 1);
     letter-spacing: 3px;
@@ -29,39 +37,43 @@ a, .nav-link, .dropdown-item {
     text-decoration: none;
     color: rgb(3, 3, 3)!important;
 }
-
 header {
-    background-color: rgba(229, 145, 224);
+    background-color: rgba(253, 176, 246);
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
     filter: alpha(opacity=85);
     -moz-opacity: 0.85;
     -khtml-opacity: 0.85;
     opacity: 0.85;
-    color: white;
-    font-weight: 800;
+    color: #000c00;
     position: relative;
     top: 0;
     left: 0;
     width: 100%;
     padding: 0;
-    margin: 0;
+    margin: 0px;
     z-index: 101;
-    box-shadow: 0px 5px 10px #ccc;
-    font-size: 1.2rem;
+    /* box-shadow: 0px 5px 10px #ccc; */
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
     /* border: solid 1px red; */
 }
 
-.dropdown-menu {
-    background-color: rgba(229, 145, 224, 0.7);
+.card-header, .card-footer, .font-bold, .display-1, .active {
+    font-family: 'RobotoCondensed-Regular', sans-serif;
+}
+/* .dropdown-menu {
+    background-color: rgba(253, 176, 246, 0.7);
     font-size: 1.2rem;
     font-weight: 800;
-}
+} */
 .carousel-img  {
     width: auto;
     max-height: 600px;
-    filter: brightness(100%)
+    filter: brightness(70%)
 }
-
+.card-img-top {
+    filter: brightness(70%)
+}
 .nav-item {
     margin: 5px;
     text-align: center;
@@ -81,28 +93,96 @@ main {
 }
 .card-footer {
     text-align: center;
+    font-size: 1.4rem;
+}
+.card-text {
+    font-size: 1.2rem;
 }
 footer {
-    background-color: rgba(229, 145, 224, 0.85);
+    background-color: rgba(253, 176, 246, 0.85);
     text-align: center;
     width: 100%;
     padding: 0;
     position: relative;
+    top: 10px;
     bottom: 0;
+    margin: 0px;
     z-index: 100;
     font-size: 1rem;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+.nome-md {
+    display: inline;
+} 
+.nome-xs {
+    display: none;
 }
 
+/* Style all font awesome icons */
+.icones-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 100px;
+    height: 100px;
+    /* text-align: center; */
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.8;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white!important;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white!important;
+}
+.fa-spotify {
+    background: #1DB954;
+    /* color: white!important; */
+}
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      color: white!important;
+      
+  }
 @media screen and (max-width:768px) {
-    /* .carousel {
+    .nome-md {
         display: none;
-    } */
-
+    } 
+    .nome-xs {
+        display: inline;
+    }
     header {
         position: absolute;
     }
 
     main {
         top: 8%;
+        display: block;
+    }
+    .carousel {
+        display: none;
+    }
+    footer {
+        display: inline-block;
+        position: relative;
+        bottom: 0;
+        top: 60px;
     }
 }
