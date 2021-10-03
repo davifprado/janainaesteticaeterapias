@@ -80,6 +80,8 @@ header {
 .card-img-top {
   filter: brightness(70%);
 }
+
+
 .nav-item {
   margin: 5px;
   text-align: center;
@@ -183,7 +185,18 @@ footer {
     font-size: 1.2rem;
     line-height: 2rem;
 }
-
+.reiki-header {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  /* color: white; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 @media screen and (max-width: 1240px) {
 
     .quem-sou {
