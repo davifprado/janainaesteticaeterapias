@@ -1,9 +1,4 @@
 @font-face {
-  font-family: "OpenSans-Bold";
-  src: url("../fonts/OpenSansCondensed-Bold.ttf");
-}
-
-@font-face {
   font-family: "OpenSans-Light";
   src: url("../fonts/OpenSansCondensed-Light.ttf");
 }
